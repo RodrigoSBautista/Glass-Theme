@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+h2,
+p,
+span {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Section */
+.glass {
+  width: 70%;
+  min-height: 80vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  z-index: 1;
+  display: flex;
+}
+/* Circles out of the main */
+.circle1,
+.circle2 {
+  width: 15vw;
+  height: 30vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.circle1 {
+  top: 2%;
+  right: 6%;
+}
+
+.circle2 {
+  bottom: 2%;
+  left: 6%;
+}
+
+/* /////////////////////   DASHBOARD ///////////////////////  */
+.dashboard {
+  flex: 1;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.pro {
+  display: flex;
+  width: 80%;
+  height: 15%;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  padding: 1rem;
+  border: 1px solid #658ec6;
+}
+
+.pro h2 {
+  color: white;
+  font-weight: bold;
+}
+
+div[class="link"] > img {
+  margin-right: 1.5rem;
+}
+
+div[class="link"] a {
+  text-decoration: none;
+}
+
+div[class="pro"] h2 {
+  font-size: 1.3rem;
+}
+
+/* ////////////////////////   ACTIVES GAMES PANEL  //////////////////////////// */
+.games {
+  flex: 2;
+  margin: 3rem;
+}
+
+.status input {
+  width: 50%;
+  padding: 0.1rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  border: 1px solid #658ec6;
+  margin-right: 1rem;
+}
+
+input[type="text"]:focus {
+  border: 2px solid #658ec6;
+  border-radius: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+  margin-top: 0.5rem;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  padding: 1.1rem;
+  margin: 1.15rem 0 0 0;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(83, 82, 82, 0.8);
+}
+
+div[class="card"] > img,
+h2 {
+  flex: 1;
+}
+
+div[class="card"] > img {
+  margin-right: 1.5rem;
+}
+
+div[class="card"] > div[class="card_info"] {
+  flex: 3;
+}
+
+[class*="progress_bar"] {
+  width: 60%;
+  height: 15%;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+[class*="progress_bar"]::after {
+  content: "";
+  background-color: rgb(228, 228, 228);
+  height: 100%;
+  position: absolute;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.progress_bar1::after {
+  width: 55%;
+  left: 85%;
+}
+
+.progress_bar2::after {
+  width: 90%;
+  left: 50%;
+}
+
+.progress_bar3::after {
+  width: 70%;
+  left: 70%;
+}
+
+.percentage {
+  text-align: right;
+  background: linear-gradient(to right top, #65dfc9, #658ec6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ///////////////// ANIMATION ///////////////// */
+.card:hover,
+.pro:hover {
+  position: relative;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+
+/* ///////////////// MAKING THE PAGE RESPONSIVE ///////////////// */
+
+@media only screen and (max-width: 600px) {
+  /* /////////////////////// Glass Section ////////////// */
+  .glass {
+    width: 80%;
+    min-height: 100vh;
+    display: initial;
+  }
+
+  /* Circles out of the main */
+  /* .circle1,
+.circle2 {
+} */
+
+  /* /////////////////////   DASHBOARD ///////////////////////  */
+  .dashboard {
+    flex: none;
+  }
+}

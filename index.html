@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Rodrigo's page</title>
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <!-- DASHBOARD -->
+        <div class="dashboard">
+          <div class="user">
+            <img src="img/avatar.png" alt="me" />
+            <h3>Simo Edwin</h3>
+            <p>Pro Member</p>
+          </div>
+
+          <div class="links">
+            <div class="link">
+              <img src="/img/twitch.png" alt="twitch" />
+              <a href=""><h2>Streams</h2></a>
+            </div>
+            <div class="link">
+              <img src="/img/steam.png" alt="steam" />
+              <a href="https://store.steampowered.com/?" target="_blank"
+                ><h2>Games</h2></a
+              >
+            </div>
+            <div class="link">
+              <img src="/img/upcoming.png" alt="upcoming" />
+              <a href=""><h2>New</h2></a>
+            </div>
+            <div class="link">
+              <img src="/img/library.png" alt="library" />
+              <a href=""><h2>Library</h2></a>
+            </div>
+          </div>
+
+          <div class="pro">
+            <h2>Join for free games</h2>
+            <img src="img/controller.png" alt="controller" />
+          </div>
+        </div>
+
+        <!-- ACTIVES GAMES PANEL -->
+        <div class="games">
+          <div class="status">
+            <h1>Active Games</h1>
+            <input id="game_textbox" type="text" />
+            <span id="search_result"></span>
+          </div>
+
+          <div class="cards">
+            <div class="card">
+              <img src="img/assassins.png" alt="assassins" />
+              <div class="card_info">
+                <h3>Assassins Creed Valhalla</h3>
+                <p>PS5 Version</p>
+                <div class="progress_bar1"></div>
+              </div>
+              <h2 class="percentage">60%</h2>
+            </div>
+
+            <div class="card">
+              <img src="img/sackboy.png" alt="sackboy" />
+              <div class="card_info">
+                <h3>Sackboy A Great Adventure</h3>
+                <p>PS5 Version</p>
+                <div class="progress_bar2"></div>
+              </div>
+              <h2 class="percentage">30%</h2>
+            </div>
+
+            <div class="card">
+              <img src="img/spiderman.png" alt="spiderman" />
+              <div class="card_info">
+                <h3>Spiderman Miles Morales</h3>
+                <p>PS5 Version</p>
+                <div class="progress_bar3"></div>
+              </div>
+              <h2 class="percentage">50%</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
